@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>formide.js</file>
+        <file>Home.qml</file>
+        <file>getMaterials.qml</file>
+        <file>detailMaterial.qml</file>
+    </qresource>
+</RCC>
