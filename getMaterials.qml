@@ -83,7 +83,7 @@ Rectangle {
             height: 50
             color: "#ff8833"
             border.width: 2
-            border.color: "#ff0000"
+            border.color: "#ff8833"
             Row{
                 spacing: 5
                 anchors.centerIn: parent
@@ -102,9 +102,6 @@ Rectangle {
                             materialsInformation2 = getEverything(index)
                             console.log(JSON.stringify(materialsInformation2))
                             main.materialsInformation2 = materialsInformation2
-                            //console.log(JSON.stringify(main.materialsInformation))
-                            //console.log(getEverything(index))
-                            //console.log(getNameMaterials(index))
                             rectangleGetDetailMaterials.parent.push(Qt.resolvedUrl("detailMaterial.qml"))
 
                         }
@@ -132,7 +129,7 @@ Rectangle {
         y: 199
         width: 101
         height: 65
-        color: "orange"
+        color: "#ff8833"
 
         TextEdit {
             id: text2

@@ -251,6 +251,12 @@ function database (id,hash) {
             });
         },
 
+        removeMaterials: function (id,callback) {
+            doHttpRequest("DELETE", "/api/db/materials/" + id, {}, function (err, result) {
+                return callback(err, result);
+            });
+        },
+
         removePrintJob: function (id,callback) {
 
            //console.log("REMOVE STEP 4")

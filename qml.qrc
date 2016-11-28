@@ -5,5 +5,8 @@
         <file>Home.qml</file>
         <file>getMaterials.qml</file>
         <file>detailMaterial.qml</file>
+        <file>confirmationDelete.qml</file>
+        <file>error.qml</file>
+        <file>succesfully.qml</file>
     </qresource>
 </RCC>

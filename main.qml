@@ -86,8 +86,7 @@ Window {
         });
     }
 
-    function getMaterials()
-    {
+    function getMaterials(){
         Formide.database().materials(function(err,response){
             if(err)
                console.log("ERR: "+err)
@@ -96,6 +95,18 @@ Window {
                 updateMaterials(JSON.parse(response))
             }
         })
+    }
+
+    function removeMaterials(id){
+        Formide.database().removeMaterials(id,function(err,resp){
+            if(err)
+               console.log("ERR: ",JSON.stringify(err))
+            if(resp)
+            {
+                getMaterials()
+            }
+        })
+
     }
 
     function updateMaterials(data) {
@@ -529,6 +540,8 @@ Window {
             function printCustomGcode(id, gcode){main.printCustomGcode(id)}
 
             function updateFileList(){main.updateFileList()}
+
+            function removeMaterials(id){main.removeMaterials(id)}
 
             initialItem: Qt.resolvedUrl("Home.qml")
         }
