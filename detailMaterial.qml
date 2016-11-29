@@ -25,42 +25,77 @@ Rectangle {
 //    "name": "Material1",
 //       "type": "Material1",
 //       "temperature": 231,
-//       "firstLayersTemperature": 137,
 //       "bedTemperature": 82,
-//       "firstLayersBedTemperature": 44,
-//       "feedRate": 134,
 
-//    function getNameMaterial(){
-//        if(materialsInformation2.name)
-//        {
-//            return materialsInformation2.name
-//        }
-//        else
-//        {
-//            return "Not defined"
-//        }
-//    }
 
-//    function getTypeMaterial(){
-//        if(materialsInformation2.type)
-//        {
-//            return materialsInformation2.type
-//        }
-//        else
-//        {
-//            return "Not defined"
-//        }
-//    }
+    function getNameMaterial(){
+        if(materialsInformation2.name)
+        {
+            return materialsInformation2.name
+        }
+        else
+        {
+            return "Not defined"
+        }
+    }
+
+    function getTypeMaterial(){
+        if(materialsInformation2.type)
+        {
+            return materialsInformation2.type
+        }
+        else
+        {
+            return "Not defined"
+        }
+    }
+
+    function getTempMaterial(){
+        if(materialsInformation2.temperature)
+        {
+            return materialsInformation2.temperature
+        }
+        else
+        {
+            return "Not defined"
+        }
+    }
+
+    function getBedTempMaterial(){
+        if(materialsInformation2.bedTemperature){
+            return materialsInformation2.bedTemperature
+        }
+        else{
+            return "Not defined"
+        }
+    }
+
 
 //    function getMaterialInfo(){
-//        if(materialsInformation2){
-//            if(materialsInformation2.name){
-//                name = materialsInformation2.name
-
-//            }
-//            else{
-//                return "Not name defined"
-//            }
+//        if(materialsInformation2.name){
+//            return name = materialsInformation2.name
+//            //return name
+//        }
+//        else{
+//            return "Not defined"
+//        }
+//        if(materialsInformation2.type){
+//            return type = materialsInformation2.type
+//            //return type
+//        }
+//        else{
+//            return "Not defined"
+//        }
+//        if(materialsInformation2.temperature){
+//            return temp = materialsInformation2.temperature
+//            //return temp
+//        }
+//        else{
+//            return "Not defined"
+//        }
+//        if(materialsInformation2.bedTemperature){
+//            return bedTemp = materialsInformation2.bedTemperature
+//            //return bedTemp
 //        }
 //        else{
 //            return "Not defined"
@@ -73,8 +108,10 @@ Rectangle {
         y: 0
         width: 296
         height: 30
-        text: "Id: "+materialsInformation2.id+ "\nName: "+materialsInformation2.name+ "\nType: " +materialsInformation2.type+ "\nTemperature: " +materialsInformation2.temperature+
-              "\nBed Temperature: " +materialsInformation2.bedTemperature
+//        text: "Id: "+materialsInformation2.id+ "\nName: "+materialsInformation2.name+ "\nType: " +materialsInformation2.type+ "\nTemperature: " +materialsInformation2.temperature+
+//              "\nBed Temperature: " +materialsInformation2.bedTemperature
+        text: "Id " +materialsInformation2.id+ "\nName: "+getNameMaterial()+ "\nType: " +getTypeMaterial()+ "\nTemperature: " +getTempMaterial()+
+              "\nBed Temperature: " +getBedTempMaterial()
         anchors.verticalCenterOffset: -113
         anchors.horizontalCenterOffset: -84
         anchors.centerIn: parent

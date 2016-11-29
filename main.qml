@@ -141,8 +141,8 @@ Window {
         }
 
         id: sock
-        url: "ws://10.1.0.61:8080"
-        //url: "ws://127.0.0.1:8080"
+        //url: "ws://10.1.0.61:8080"
+        url: "ws://127.0.0.1:8080"
 
 
         onTextMessageReceived: {

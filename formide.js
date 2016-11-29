@@ -3,8 +3,8 @@
 Qt.include("socketParser.js");
 
 // vars
-//var baseUrl = 'http://127.0.0.1:1337';
-var baseUrl = 'http://10.1.0.61:1337';
+var baseUrl = 'http://127.0.0.1:1337';
+//var baseUrl = 'http://10.1.0.61:1337';
 var accessToken = '7e109efa-c2a4-4fab-b7f4-f348842111d9';
 
 var accessToken = '';
