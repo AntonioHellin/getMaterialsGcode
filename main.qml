@@ -141,8 +141,8 @@ Window {
         }
 
         id: sock
-        //url: "ws://10.1.0.61:8080"
-        url: "ws://127.0.0.1:8080"
+        url: "ws://10.1.0.61:8080"
+        //url: "ws://127.0.0.1:8080"
 
 
         onTextMessageReceived: {
@@ -267,6 +267,7 @@ Window {
                console.log(qsTr("Client error: %1").arg(sock.errorString));
             } else if (sock.status == WebSocket.Closed) {
                console.log(qsTr("Client socket closed."));
+               splashTimer.interval = 0
             } else if (sock.status == WebSocket.Open) {
                 socketLogin();
             }
@@ -293,7 +294,7 @@ Window {
     Timer{
         id:splashTimer
 
-        interval: 60000
+        interval: 30000
         repeat: false
         running: true
 

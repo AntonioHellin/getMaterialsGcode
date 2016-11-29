@@ -30,42 +30,42 @@ Rectangle {
 //       "firstLayersBedTemperature": 44,
 //       "feedRate": 134,
 
-    function getNameMaterial(){
-        if(materialsInformation2.name)
-        {
-            return materialsInformation2.name
-        }
-        else
-        {
-            return "Not defined"
-        }
-    }
+//    function getNameMaterial(){
+//        if(materialsInformation2.name)
+//        {
+//            return materialsInformation2.name
+//        }
+//        else
+//        {
+//            return "Not defined"
+//        }
+//    }
 
-    function getTypeMaterial(){
-        if(materialsInformation2.type)
-        {
-            return materialsInformation2.type
-        }
-        else
-        {
-            return "Not defined"
-        }
-    }
+//    function getTypeMaterial(){
+//        if(materialsInformation2.type)
+//        {
+//            return materialsInformation2.type
+//        }
+//        else
+//        {
+//            return "Not defined"
+//        }
+//    }
 
-    function getMaterialInfo(){
-        if(materialsInformation2){
-            if(materialsInformation2.name){
-                name = materialsInformation2.name
+//    function getMaterialInfo(){
+//        if(materialsInformation2){
+//            if(materialsInformation2.name){
+//                name = materialsInformation2.name
 
-            }
-            else{
-                return "Not name defined"
-            }
-        }
-        else{
-            return "Not defined"
-        }
-    }
+//            }
+//            else{
+//                return "Not name defined"
+//            }
+//        }
+//        else{
+//            return "Not defined"
+//        }
+//    }
 
     Text{
         id:textText
@@ -73,7 +73,8 @@ Rectangle {
         y: 0
         width: 296
         height: 30
-        text: "Id: "+materialsInformation2.id+ "\nName: "+materialsInformation2.name+ "\nType: " +materialsInformation2.type+ "\nTemperature: " +materialsInformation2.temperature
+        text: "Id: "+materialsInformation2.id+ "\nName: "+materialsInformation2.name+ "\nType: " +materialsInformation2.type+ "\nTemperature: " +materialsInformation2.temperature+
+              "\nBed Temperature: " +materialsInformation2.bedTemperature
         anchors.verticalCenterOffset: -113
         anchors.horizontalCenterOffset: -84
         anchors.centerIn: parent
